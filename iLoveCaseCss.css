@@ -1,0 +1,289 @@
+header, footer, nav, article, section {display: block;}
+
+a>img  
+{  
+	border: none;  
+} 
+
+body
+{
+	width:100%;
+	color: #111111;
+	overflow-x: hidden;
+	margin: 0px;
+	font-size: 16px;
+}
+
+
+body:before /*тень от панели браузера*/
+{
+	content: "";
+	position: fixed;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	z-index: 100;
+	-webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	-moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+	box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+}
+
+ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+/* ---------------------- Begin Header ---------------------- */
+
+
+#header
+{
+	
+	position:fixed;
+	top: 0px;
+	right:0px;
+	z-index: 1;
+	height: 60px;
+	width: 100%;
+	background-color: #444;
+	transition: 0.3s;
+	background-image: url('designImg/sobg.png');
+}
+
+#header:hover
+{
+	background-color: #333;
+	background-image: none;
+
+}
+
+img.logotype
+{
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 38%;
+	height: 100px;
+	width: 300px;
+	background-color: none;
+	
+	z-index: 2;
+}
+
+ul.listNav
+{
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+
+	list-style-image: none;
+	text-shadow: 0 0 6px rgba(222,222,222, 0.8);
+	font-size: 1.25em;
+	
+	color: #EEE;
+}
+
+ul.listNav>li
+{
+	display: inline-block;
+	padding-bottom: 3px;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	cursor: pointer;
+	margin-left: 25px;
+	background-color: #444;
+	padding: 7px;
+	padding-top: 32px;
+	border-radius: 4px;
+	border: 1px;
+	border-color: #555;
+}
+
+li.listNavR
+{
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+	margin-right: 25px;
+}
+/* ----------------------- END Header ----------------------- */
+
+
+/* --------------------- Begin contentSlider --------------------- */
+
+#contentSlider
+{
+	margin: 10px auto;
+	margin-top: 75px;
+	width: 960px;
+	height: 360px;
+	z-index: 0;
+	background-color: #D8D8D8;
+
+	border-radius: 4px;
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.prev
+{
+	display: block;
+	float: left;
+	cursor: pointer;
+	margin-top: 100px;
+	margin-left: 3px;
+}
+.next
+{
+	display: block;
+	float: right;
+	cursor: pointer;
+	vertical-align: middle;
+	margin-top: 100px;
+	margin-right: 3px;
+	
+}
+/* ---------------------- END contentSlider ---------------------- */
+
+
+/* --------------------- Begin infoContent --------------------- */
+
+#navContent
+{
+	margin: 10px auto;
+	width: 100%;
+	background-color: #D8D8D8;
+	background-image: url('designImg/sobg.png');
+	overflow: auto;
+}
+.ul1
+{
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+	list-style-image: none;
+	margin-top: 10px;
+}
+.ul2
+{
+	display: block;
+	width: 960px;
+	margin: 0 auto;
+	list-style-image: none;
+}
+.ul1>li, .ul2>li
+{
+	display: inline-block;
+	
+	background-color: #444;
+	
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.25em;
+	color: #eee;
+	
+	cursor: pointer;
+	padding: 7px;
+	margin-left: 25px;
+}
+/* ---------------------- END infoContent ---------------------- */
+
+
+/* --------------------- Begin aboutWork --------------------- */
+
+#aboutWork
+{
+	margin: 10px auto;
+	width: 960px;
+	height: 750px;
+	/*border: 2px solid black;*/
+	background-image: url(aboutbg.png);
+	background-color: #e8e8e8;
+	border-radius: 4px;
+	z-index: 0;
+	
+	font-family: 'Marck Script';
+	font-size: 1.4em;
+	font-weight: 600;
+	
+}
+
+#aboutWork ul
+{
+	display: block;
+	/*border: 2px solid black;*/
+	width: 200px;
+	margin-left: 50px;
+	text-align: left;
+
+}
+
+p
+{
+	display: block;
+	/*border: 2px solid black;*/
+	
+	margin: 0;
+	clear:none;
+	float:left;
+	font-size: 5em;
+}
+
+.one { clear: left; float:left; margin-top: 20px; margin-left: 30px; }
+
+.two { clear: left; float:right; margin-top: 20px; margin-right: 10px; }
+
+.three { clear: right; float:left; margin-top: -10px; margin-left: 30px; }
+
+.four { clear: left; float: right; margin-top: 0; margin-left: 10px; }
+
+#aboutWork ul li
+{
+	list-style-type: none;
+}
+
+#aboutWork ul li:before
+{
+	content: url("arrow.png") " ";
+}
+
+.BlockInSnake
+{
+	display: block;	
+	clear: none;
+	
+	margin-top: 20px;
+	width: 300px;
+	border: 3px solid #5DB6E0;
+	border-radius: 10px;
+	background-color: white;
+	text-align: center;
+	z-index: 0;
+	
+}
+
+.first { float:left; clear:right; margin-left: 10px; height: 110px; padding: auto; }
+
+.second { float: right; clear:left; margin-right: 140px; height: 80px; padding-top: 30px; }
+
+.third { float: left; clear: right; margin-left: 10px; height: 50px; padding: 20px 10px 7px 10px; }
+
+.fourth { float: right; clear: left; margin-right: 180px; height: 60px; padding-top: 20px; }
+
+.h2class
+{
+	display: block;
+	width:100%;	
+	/*border: 2px solid black;*/
+	padding-top: 67px;
+	text-align: center;
+	color: #333;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-weight: 600;
+	text-shadow: 1px 1px 2px #5DB6E0;
+	font-size: 2em;
+}
+/* ---------------------- END aboutWork ---------------------- */
